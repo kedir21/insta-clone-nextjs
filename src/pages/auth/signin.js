@@ -1,4 +1,4 @@
-import Header from '../../../components/Header';
+import Header from '../../components/Header';
 import {getProviders , signIn as SignIntoProvider } from 'next-auth/react'
 
 const signIn = ({providers}) => {

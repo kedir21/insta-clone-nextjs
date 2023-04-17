@@ -12,7 +12,7 @@ import { HomeIcon } from "@heroicons/react/solid";
 import { signIn, signOut, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
-import { modalState } from "../atoms/modalAtom";
+import { modalState } from "../../atoms/modalAtom";
 
 const Header = () => {
   const { data: session } = useSession();

@@ -12,7 +12,7 @@ import Moment from 'react-moment';
 import {HeartIcon as HeartIconFilled} from '@heroicons/react/solid'
 import { useSession } from 'next-auth/react';
 import { addDoc, collection, deleteDoc, doc, onSnapshot, orderBy, query, serverTimestamp, setDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import { db } from '../../firebase';
 
 function Post({id, username, userImg, img, caption}) {
 

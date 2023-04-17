@@ -1,9 +1,9 @@
 import { useRecoilState } from "recoil";
-import { modalState } from "../atoms/modalAtom";
+import { modalState } from "../../atoms/modalAtom";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useRef, useState } from "react";
 import { CameraIcon } from "@heroicons/react/outline";
-import {db, storage } from '../firebase'
+import {db, storage } from '../../firebase'
 import { addDoc, collection, doc, serverTimestamp, updateDoc } from "firebase/firestore";
 import { useSession } from "next-auth/react";
 import { ref, getDownloadURL, uploadString } from "firebase/storage";
